@@ -18,4 +18,8 @@ class School
   def grade(grade)
     @roster[grade]
   end
+
+  def sort
+    @roster.each_value { |kids| kids.sort! }
+  end
 end
